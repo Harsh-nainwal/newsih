@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Us</title>
+    <link rel="stylesheet" href="../static/styles/aboutus.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="logo">
+          <a href="{{ url_for('index_page') }}" class="imglink"
+            ><img
+              src="../static/images/logo.jpg"
+              alt="EcoTech Reclaim"
+              height="65px"
+              width="auto"
+          /></a>
+        </div>
+        <div class="items">
+          <ul>
+            <!-- ADDED HOME -->
+            <li><a href="{{ url_for('index_page') }}">Home</a></li>
+            <!-- HOME ENDED -->
+            <li><a href="{{ url_for('aboutus_page') }}">About Us</a></li>
+            <div class="dropdown">
+              <button class="link dropbtn">Services</button>
+              <div class="dropdown-content">
+                <a href="{{ url_for('buy_page') }}">Buy</a>
+                <a href="{{ url_for('sell_page') }}">Sell</a>
+                <a href="#facility_locator">Facility Locator</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="{{ url_for('learningoc_page') }}"><button class="link dropbtn">
+                Learning Outcome</a>
+              </button>
+              <div class="dropdown-content">
+                <a href="{{ url_for('learningoc_page') }}">Education</a>
+                <a href="{{ url_for('learningoc_page') }}">Classification of E-Waste</a>
+                <a href="{{ url_for('learningoc_page') }}">Statistics</a>
+                <a href="{{ url_for('learningoc_page') }}">Blogs</a>
+              </div>
+            </div>
+            <li><a href="{{ url_for('contactus_page') }}">Contact Us</a></li>
+            <div class="btn">
+              <button class="join-btn">
+                <li><a href="{{ url_for('login_page') }}">Join Our Community</a></li>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="about-us-1">
+      <div class="au-left">
+        <div class="aul-up">
+          <div class="img-au1">
+            <img
+              src="../static/images/au1.png"
+              alt=""
+              width="800px"
+              height="450px"
+            />
+          </div>
+          <div class="blank-au1"></div>
+        </div>
+        <div class="aul-down"></div>
+      </div>
+      <div class="au-right">
+        <div class="aur-up"></div>
+        <div class="aur-down">
+          <h1>
+            <b><u>ABOUT US</u></b>
+          </h1>
+          <p>
+            Your obsolete gadgets, once gathering dust, now become treasures in
+            our marketplace. We provide competitive compensation for your
+            e-waste, ensuring you're not just getting rid of clutter but also
+            contributing to a sustainable future.
+          </p>
+          <p>
+            When you choose Eco-Tech Reclaim, you join a community that
+            transcends individual actions. You become a vital part of the
+            circular economy, reducing waste, conserving resources, and
+            minimizing environmental impact. Explore Eco-Tech Reclaim today and
+            be part of the electronic revolution that's changing lives and
+            saving the planet, one circuit at a time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about-us-2">
+      <div class="au2-left">
+        <h1><u>WHAT WE DO?</u></h1>
+        <div class="au2-left-bottom">
+          <p>
+            For the past few days, our journey has been a testament to
+            innovation, sustainability, and heartfelt connections. Eco-Tech
+            Reclaim isn't just a website; it's a bridge of possibilities, a
+            beacon of hope for both sellers and the planet. It's where your old
+            electronic treasures become part of a much grander tale.
+          </p>
+
+          <p>
+            At Eco -Tech Reclaim, we believe that every electronic device, no
+            matter how old or worn, holds a valuable story. With a vision to
+            transform e-waste into e-wealth, we offer sellers a platform to sell
+            their electronic relics, freeing up space and earning a fair reward
+            for their cherished memories.
+          </p>
+        </div>
+      </div>
+      <div class="au2-right">
+        <div class=" au2-right-box"> <img
+          src="../static/images/au2.png"
+          alt=""
+          width="680px"
+          height="450px"
+        /></div>
+      </div>
+    </div>
+    <div class="about-us-3">
+      <div class="au3-left">
+        <div class="au3-left-box">  <div class=" au2-right-box"> <img
+          src="../static/images/au3.png"
+          alt=""
+          width="550px"
+          height="470px"></div></div>
+      </div>
+      <div class="au3-right">
+        <h1><u>HOW WE DO</u></h1>
+        <div class="au3-right-bottom">
+          <p>
+            We collect your devices at your doorstep so now no more worries
+            about disposal. Our commitment to sustainability is unwavering. We
+            meticulously sort, refurbish, and repurpose electronic components,
+            giving them a second chance at life. Each piece embarks on a new
+            journey, powered by our love. for technology and our planet. Beyond
+            transactions, we foster a community of like-minded individuals who
+            share our passion for sustainability. Together, we're creating a
+            world where e-waste is not a problem but an opportunity. At Eco-Tech
+            Reclaim, we understand the emotional attachment you have with your
+            gadgets. Rest assured, your cherished memories are in safe hands,
+            ready to create new stories for someone else.
+          </p>
+
+          <p>
+            At Eco-Tech Reclaim, we understand the emotional attachment you have
+            with your gadgets. Rest assured, your cherished memories are in safe
+            hands, ready to create new stories for someone else.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about-us-2 about-us-4">
+      <div class="au2-left">
+        <h1><u>WHY CHOOSE US</u></h1>
+        <div class="au2-left-bottom">
+          <p>
+            Your obsolete gadgets, once gathering dust, now become treasures in
+            our marketplace. We provide competitive compensation for your
+            e-waste, ensuring you're not just getting rid of clutter but also
+            contributing to a sustainable future.
+          </p>
+
+          <p>
+            When you choose Eco-Tech Reclaim, you join a community that
+            transcends individual actions. You become a vital part of the
+            circular economy, reducing waste, conserving resources, and
+            minimizing environmental impact. Explore Eco-Tech Reclaim today and
+            be part of the electronic revolution that's changing lives and
+            saving the planet, one circuit at a time.
+          </p>
+        </div>
+      </div>
+      <div class="au2-right">
+        <div class="greybox au2-right-box">
+            <div class="recycled">
+                <div class="recy-1">
+                    <h1>E-WASTE GENERATED</h1>
+                    <h1> : 1,601,155</h1>
+                </div>
+                <div class="recy-2">
+                    <h1>RECYCLED</h1>
+                    <h1> : 527,131</h1>
+                </div>
+                
+            </div>
+            <div class="expecteddec">
+                <h1>Expected Decrease</h1>
+                <div class="timer" id="timer">
+                    1,074,024
+                </div>
+            </div>
+        </div>
+    
+      </div>
+    </div>
+    <div class="fl">
+      <div class="fl-img-left">
+        <img src="../static/images/aboutuslast.PNG" alt="" height="150px" />
+      </div>
+      <div class="fl-right">
+        <div class="input">
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Write your requirements in mail"
+          />
+          <button class="fl-btn"><a href="{{ url_for('aboutus_mail') }}">Send</a></button>
+        </div>
+        <div class="underline"></div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="popup-content">
+        <h1>X</h1>
+        <h2>
+          Did u know several elements and substances found in e-waste can be
+          associated with an increased risk of cancer?
+        </h2>
+        <br />
+        <p>
+          Chronic exposure to elements such as Lead(pb),Cadmium (Cd),Mercury
+          (Hg) used in CRT monitors and older TV screens, batteries, lamps,
+          switches, circuit boards, cables, etc causes various kind of cancer.
+        </p>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename ='scripts/aboutus.js') }}"></script>
+  </body>
+  <footer>
+    <div class="footer">
+      <div class="fu">
+        <div class="footer-left">
+          <div class="fl-img">
+            <img src="../static/images/logogrey.jpeg" alt="" width="150px" />
+          </div>
+          <p>
+            ECO TECH RECLAIM is an e-waste collection and conversion initiative
+            which aims to build a sustainable and prosperous future for all
+          </p>
+        </div>
+        <div class="footer-mid">
+          <div class="services si">
+            <div class="footer-mid-heading">
+              <h3>Services</h3>
+            </div>
+            <div class="footer-mid-items">
+              <p><a href="{{ url_for('sell_page') }}"></a>Sell</p>
+              <p><a href="{{ url_for('buy_page') }}"></a>Buy</p>
+              <p><a href="locator.html"></a>Locator</p>
+            </div>
+          </div>
+          <div class="info si">
+            <div class="footer-mid-heading">
+              <h3>Information</h3>
+            </div>
+            <div class="footer-mid-items">
+              <p><a href="{{ url_for('aboutus_page') }}"></a>What we are</p>
+              <p><a href="{{ url_for('learningoc_page') }}"></a>What we do</p>
+              <p><a href="features.html"></a>Features</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="office">
+            <h2>OFFICE-ADDRESS:-</h2>
+            <div class="address"><a href="office.html"></a></div>
+          </div>
+          <div class="conct-us">
+            <h2>CONTACT US</h2>
+          </div>
+        </div>
+      </div>
+      <div class="fd">
+        Copyright © 2023 EcoTech ReClaim eWaste Management LTD. ALL RIGHTS ARE
+        RESERVED
+      </div>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buy</title>
+    <link rel="stylesheet" href="../static/styles/sell.css">
+</head>
+<body>
+<div class="header">
+    <div class="navbar">
+        <div class="logo">
+            <a href="{{ url_for('index_page') }}" class="imglink"><img src="../static/images/logo.jpg" alt="EcoTech Reclaim" height="65px" width="auto" ></a>
+        </div>
+        <div class="items">
+            <ul>
+                <li><a href=".{{ url_for('aboutus_page') }}">About Us</a></li>
+                <div class="dropdown">
+                    <button class="link dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('buy_page') }}">Buy</a>
+                        <a href="{{ url_for('sell_page') }}">Sell</a>
+                        <a href="fl.html">Facility Locator</a>
+
+                    </div>
+                </div>
+                <li><a href="{{ url_for('learningoc_page') }}">Learning Outcome</a></li>
+                <li><a href="{{ url_for('contactus_page') }}">Contact Us</a></li>
+                <div class="btn">
+                    <button class="join-btn"><a href="{{ url_for('login_page') }}">Join Our Community</a></li></button>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="sell-banner">
+    <img src="../static/images/buy-banner.png " alt="" width="1550">
+</div>
+
+<div class="confused">
+    <div class="confused-left">
+        <img src="../static/images/confused.png" alt="" height="230px" width=" 350px">
+    </div>
+
+    <div class="confused-right"><img src="../static/images/confuesd-right.jpeg" alt="" width="900"></div>
+
+</div>
+
+<div class="upload-upper">
+    <div class="upload-upper-left"></div>
+    <div class="upload-upper-right">
+        <img src="../static/images/upload.png" alt="" height="350px">
+        <button class="join-btn upload-btn">Upload</button>
+    </div>
+</div>
+<div class="upload-lower">
+    <div class="upload-txt">YOUR DEVICE IMAGE IS <br> IS UPLOADED SUCCESSFULLY</div>
+    <div class="upload-txt">CHECKING THE DEVICE <br> FOR DAMAGE</div>
+    <div class="upload-txt">CALCULATING THE FINAL <br> PRICE</div>
+</div>
+
+<div class="confirm">
+    <div class="confirm-upper">
+        <div class="confirm-upper-left">
+            <img src="../static/images/confirm.png" width="400px">
+            <button class="join-btn upload-btn"> NEXT</button>
+        </div>
+        <div class="confirm-upper-right">
+            <div>The final price for <br> your(device name) <br> is calculated <br> approximately to</div>
+            <div class="tick"></div>
+        </div>
+    </div>
+
+    <div class="confirm-lower">
+        <div>
+            <div class="confirm-input">
+                <div class="first-row">
+                    <div><input id="first-line" class="fillin" type="text" placeholder="First line"></div>
+                    <div><input id="second-line" class="fillin" type="text" placeholder="Second line"></div>
+                </div>
+                <div class="second-row">
+                    <div class="nearby"><input id="location" class="fillin" type="text"
+                                               placeholder="Nearby location, landmark, park, hospital, etc."></div>
+                </div>
+                <div class="third-row">
+                    <div><input id="city" type="text" class="fillin" placeholder="City"></div>
+                    <div><input id="pincode" type="number" class="fillin" placeholder="State-pincode"></div>
+                </div>
+            </div>
+            <div class="fourth-row">
+                <button class="join-btn upload-btn"> Confirm</button>
+            </div>
+        </div>
+        <div class="residential">
+            ENTER YOUR <br> RESIDENTIAL <br> DETAILS
+        </div>
+    </div>
+
+
+</div>
+<div class="fl">
+    <div class="fl-img-left">
+        <div>LOCATE YOUR <br> NEAREST <br> FACILITY CENTER <br>
+            <div class="red">NOW!</div>
+        </div>
+    </div>
+    <div class="fl-right">
+        <div class="input">
+            <input class="form__input" type="text" placeholder="Enter you state">
+        </div>
+        <div class="input">
+            <input class="form__input" type="text" placeholder="Enter your city">
+        </div>
+        <div class="fourth-row">
+            <button class="join-btn upload-btn">Search</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<footer>
+    <div class="footer">
+        <div class="fu">
+            <div class="footer-left">
+                <div class="fl-img"><img src="../static/images/logogrey.jpeg" alt="" width="150px"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae sit labore eaque? Vitae cumque
+                    laudantium doloribus itaque assumenda, possimus excepturi accusamus. Expedita illo quaerat dolorem
+                    neque laborum aut quod adipisci?</p>
+            </div>
+            <div class="footer-mid">
+                <div class="services si">
+                    <div class="footer-mid-heading">
+                        <h3>Services</h3>
+                    </div>
+                    <div class="footer-mid-items">
+                        <p><a href="{{ url_for('sell_page') }}"></a>Sell</p>
+                        <p><a href="{{ url_for('buy_page') }}"></a>Buy</p>
+                        <p><a href="locator.html"></a>Locator</p>
+                    </div>
+                </div>
+                <div class="info si">
+                    <div class="footer-mid-heading">
+                        <h3>Information</h3>
+                    </div>
+                    <div class="footer-mid-items">
+                        <p><a href="{{ url_for('aboutus_page') }}"></a>What we are</p>
+                        <p><a href="{{ url_for('learningoc_page') }}"></a>What we do</p>
+                        <p><a href="features.html"></a>Features</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="office">
+                    <h2>OFFICE-ADDRESS:-</h2>
+                    <div class="address"><a href="office.html"></a></div>
+                </div>
+                <div class="conct-us">
+                    <h2>CONTACT US</h2>
+                </div>
+            </div>
+        </div>
+        <div class="fd">
+            Copyright © 2023 EcoTech ReClaim eWaste Management LTD. ALL RIGHTS ARE RESERVED
+        </div>
+    </div>
+</footer>
+</html>

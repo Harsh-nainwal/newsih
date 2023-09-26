@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=Pangolin&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+body {
+  min-height: 300vh;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  padding-left: 1vw;
+  padding-top: 1vh;
+  background-blend-mode: multiply;
+}
+
+.navbar {
+  display: flex;
+  /* overflow: hidden; */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(196, 196, 196, 0.589);
+  height: 10vh;
+  font-family: "IBM Plex Serif", serif;
+  z-index: 100;
+  width: 100vw;
+}
+
+.items ul {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+  padding-top: 4vh;
+  font-size: large;
+  font-weight: 450;
+  padding-left: 26vw;
+}
+
+.items a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.items a:hover {
+  color: rgb(58, 238, 82);
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+/* .intro{
+    background-image: url(India.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1350px;
+    height: 703px;
+    color: antiquewhite;
+    font-family: 'Pangolin' sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+} */
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: rgb(58, 238, 82);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(175, 176, 168);
+  min-width: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(151, 148, 145);
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.join-btn {
+  background-color: orangered;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border: 0.15rem solid orangered;
+  border-radius: 43px;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  color: #ffffff;
+}
+.join-btn a:hover {
+  color: rgb(0, 0, 0);
+}
+.join-btn:hover {
+  background-color: rgba(255, 68, 0, 0.671);
+}
+.img-container {
+  height: 95vh;
+}
+
+.footer {
+  background-color: #e1e6e1;
+  height: 40vh;
+  width: 100vw;
+  margin-top: 25.1vh;
+}
+.fu {
+  height: 85%;
+  display: flex;
+  width: 100vw;
+}
+.fd {
+  height: 15%;
+  background-color: #b2b0b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  padding-left: 5vw;
+}
+.footer-mid {
+  padding-top: 5vh;
+  display: flex;
+  width: 20vw;
+  gap: 5vw;
+  padding-left: 7vw;
+}
+.address {
+  background: url("../images/address.PNG");
+  width: 400px;
+  height: 100px;
+  border: 2px solid #e1e6e1;
+  border-radius: 150px;
+  overflow: hidden;
+}
+.footer-right {
+  padding-top: 5vh;
+  padding-left: 6vw;
+}
+.footer-left p {
+  text-align: center;
+}
+.fl-img {
+  padding-left: 6vw;
+}
+.footer-mid-items {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vh;
+}
+.footer-mid-items p {
+  text-align: center;
+}
+.conct-us {
+  padding-top: 2vh;
+}
+
+.office h2 {
+  padding-bottom: 2vh;
+}
+.about-us-1 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.au-left {
+  width: 800px;
+  padding-right: 1vw;
+}
+.aur-down {
+  margin-top: 46vh;
+  padding-top: 5px;
+  padding-left: 15px;
+  width: 40vw;
+  background-color: #9acd4c;
+  height: 35vh;
+  border: 1px solid #9acd4c;
+  border-radius: 4px;
+}
+.aur-down p {
+  padding-top: 3vh;
+  font-size: 20px;
+  padding-right: 1vw;
+}
+.aur-down h1 {
+  text-align: right;
+  padding-top: 3vh;
+  padding-right: 2vw;
+}
+
+.img-au1 {
+  margin-top: 15vh;
+  margin-left: 2vw;
+}
+.conct-us-2 {
+  display: flex;
+  height: 70vh;
+  width: 70vw;
+  margin-left: 15vw;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 4px 4px 6px 6px rgba(196, 196, 196, 0.589);
+  background-color: #f9f9f9;
+}
+.cs2-left {
+  height: 99.7%;
+  width: 40%;
+  background-color: #ff5d29;
+  border: 1px solid #ff5d29;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.cs2-left img {
+  padding-top: 12vh;
+  padding-left: 3vw;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+.fl1 {
+  display: flex;
+  gap: 2.5vw;
+}
+.form__input {
+  height: 4vh;
+  background-color: #bdbaba8f;
+  border: 1px solid #bdbaba8f;
+  border-radius: 2px;
+}
+.cs2-right {
+  padding-top: 15vh;
+  padding-left: 5vw;
+}
+.form__input1 {
+  width: 13.5vw;
+}
+.form__input2 {
+  width: 29.6vw;
+}
+.form__input3 {
+  width: 29.6vw;
+}
+.form__input4 {
+  width: 29.6vw;
+  height: 15vh;
+}
+
+.au2-btn {
+  width: 10vw;
+  height: 3vh;
+  background-color: #ff5d29;
+  border: 1px solid #ff5d29;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10vw;
+  font-size: 17px;
+}
+.au2-btn a:visited {
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+::placeholder {
+  color: #000;
+  font-size: 17px;
+}
+
+.conct-us-3 {
+  display: flex;
+  margin-top: 30vh;
+  margin-left: 5vw;
+  gap: 5vw;
+}
+.cs3-right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3vw;
+}
+.cs3-left {
+  padding-top: 7vh;
+}
+
+.faq {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(128, 128, 128);
+}
+.question {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4d4b4b;
+}
+.question h3 {
+  font-size: 1.5rem;
+}
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.75s ease;
+}
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.2;
+  font-size: 1.4rem;
+}
+.faq.active .answer {
+  max-height: 300px;
+  animation: fade 0.5s ease-in-out;
+}
+.faq.active svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

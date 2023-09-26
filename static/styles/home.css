@@ -1,0 +1,733 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=Pangolin&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+body {
+  min-height: 300vh;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  padding-left: 1vw;
+  padding-top: 1vh;
+  background-blend-mode: multiply;
+}
+
+.navbar {
+  display: flex;
+  /* overflow: hidden; */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(196, 196, 196, 0.589);
+  height: 10vh;
+  font-family: "IBM Plex Serif", serif;
+  z-index: 100;
+  width: 100vw;
+}
+
+.items ul {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+  padding-top: 4vh;
+  font-size: large;
+  font-weight: 450;
+  padding-left: 26vw;
+}
+
+.items a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.items a:hover {
+  color: rgb(58, 238, 82);
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+/* .intro{
+    background-image: url(India.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1350px;
+    height: 703px;
+    color: antiquewhite;
+    font-family: 'Pangolin' sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+} */
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: rgb(58, 238, 82);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(175, 176, 168);
+  min-width: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(151, 148, 145);
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.join-btn {
+  background-color: orangered;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border: 0.15rem solid orangered;
+  border-radius: 43px;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  color: #ffffff;
+}
+.join-btn a:hover {
+  color: rgb(0, 0, 0);
+}
+.join-btn:hover {
+  background-color: rgba(255, 68, 0, 0.671);
+}
+.img-container {
+  height: 95vh;
+}
+
+.slider {
+  width: 100vw;
+  height: 96vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slides {
+  width: 500%;
+  height: 96vh;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+.slide img {
+  width: 100%;
+  height: 96vh;
+}
+
+.navigation-manual {
+  position: relative;
+  width: 95vw;
+  margin-top: -26px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn {
+  border: 2px solid #000000;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  display: none;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+.manual-btn:hover {
+  background: #000000;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/* Css for automatic naviagtion */
+
+.navigation-auto {
+  position: relative;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+}
+
+.navigation-auto div {
+  border: 2px solid #0a0a0a;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #050505;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #0a0a0a;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #000000;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #0d0e0e;
+}
+
+.infoAbout {
+  display: flex;
+  padding-top: 5vh;
+  padding-left: 8vw;
+  height: 70vh;
+}
+
+.heading {
+  color: rgb(70, 67, 67);
+  /* z-index: 10;      ADJUSTED THE Z INDEX */
+  width: 200px;
+}
+.underline {
+  width: 30px;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: column;
+  width: 29vw;
+}
+
+.kuch {
+  height: 20vh;
+  width: 20vw;
+}
+.rightInfo {
+  padding-top: 5vh;
+}
+
+.para {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  background-color: #9acd4c;
+  height: 80vh;
+  border: 2px solid #9acd4c;
+  border-radius: 10px;
+  margin-top: 2vh;
+}
+.p2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+.p1 {
+  justify-content: center;
+  text-align: start;
+  font-size: 25px;
+}
+.highlight {
+  background-color: rgb(
+    255,
+    242,
+    122
+  ); /* You can change this color to your preference */
+  color: black; /* Text color */
+  font-weight: 400;
+  padding: 10px; /* Add some padding to create space around the text */
+  border: 2px solid red; /* Add a red border around the highlighted text */
+}
+.p3 {
+  text-align: center;
+  font-size: 20px;
+}
+.knowMore-btn {
+  background-color: orangered;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border: 0.1rem solid orangered;
+  border-radius: 43px;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 8vh;
+}
+.knowMore-btn a:hover {
+  color: rgb(0, 0, 0);
+}
+.knowMore-btn:hover {
+  background-color: rgba(255, 68, 0, 0.671);
+}
+.knowMore-btn a:visited {
+  color: white;
+}
+.knowMore {
+  padding-left: 8vw;
+  padding-top: 1vh;
+  padding-bottom: 5vh;
+}
+.getProducts {
+  padding-left: 8vw;
+  padding-top: 3vh;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  overflow: hidden;
+}
+.getPH {
+  width: 23vw;
+}
+
+/*shashi ko dena hai */
+.box {
+  height: 5vw;
+  width: 5vw;
+}
+
+.box1 {
+  background: url("../images/laptop-alt-2-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.box2 {
+  background: url("../images/refrigerator-1-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box3 {
+  background: url("../images/monitor-alt-1-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box4 {
+  background: url("../images/electronic-powerbank-electric-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box5 {
+  background: url("../images/usb-cable-usb-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.box6 {
+  background: url("../images/bulb-on-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box7 {
+  background: url("../images/disk-drive-external-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box8 {
+  background: url("../images/cpu-3-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.box9 {
+  background: url("../images/click-hardware-mouse-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box10 {
+  background: url("../images/computer-hardware-interface-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box11 {
+  background: url("../images/cam-camera-video-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box12 {
+  background: url("../images/modem-router-wifi-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box13 {
+  background: url("../images/air-conditioner-outdoor-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box14 {
+  background: url("../images/microwave-oven-microwave-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box15 {
+  background: url("../images/toaster-1-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.box16 {
+  background: url("../images/washing-machine-free-material-6-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 8vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.productContainer {
+  padding-left: 8vw;
+}
+
+/*shashi wale mai dalna hai */
+.boxes {
+  margin-top: 7vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 3vw;
+  width: 95vw;
+}
+.knowMore2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+}
+.fl {
+  height: 42vh;
+  background-color: #9acd4c;
+  display: flex;
+  gap: 35vw;
+  overflow: hidden;
+}
+.fl-img-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8vw;
+}
+.fl-right {
+  width: 30vw;
+  padding-top: 10vh;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.form__input {
+  height: 5vh;
+  width: 25vw;
+  background-color: #d9d9d9;
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+}
+.fl-btn {
+  width: 10vw;
+  margin-left: 7.1vw;
+}
+.buySell {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 90vh;
+  padding-top: 5vh;
+}
+.sell {
+  display: flex;
+  height: 45vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+.buy {
+  display: flex;
+  height: 45vh;
+  padding-left: 4vw;
+  padding-right: 8vw;
+}
+
+.headingbs {
+  color: rgb(70, 67, 67);
+  width: 100px;
+}
+
+.sell-left {
+  width: 70vw;
+}
+.buy-right {
+  width: 70vw;
+}
+.sell-right {
+  width: 30vw;
+}
+.buy-left {
+  width: 30vw;
+}
+.buy-left img {
+  padding-right: 4vw;
+}
+.parabs {
+  padding-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.buy-btn,
+.sell-btn {
+  margin-top: 2vh;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 30vh;
+  gap: 5vh;
+  padding-bottom: 5vh;
+}
+
+.headingLast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-container {
+  padding-left: 11vw;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #9acd4c;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  gap: 5vw;
+  height: 10vh;
+  align-items: center;
+}
+
+.text-wrapper h2 {
+  z-index: 10;
+  font-size: 30px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #fff;
+  padding: 0.6rem;
+  letter-spacing: 1px;
+  animation: move-rt1 10s linear infinite;
+}
+
+@keyframes move-rt1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.footer {
+  background-color: #e1e6e1;
+  height: 40vh;
+  width: 100vw;
+}
+.fu {
+  height: 85%;
+  display: flex;
+  width: 100vw;
+}
+.fd {
+  height: 15%;
+  background-color: #b2b0b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  padding-left: 5vw;
+}
+.footer-mid {
+  padding-top: 5vh;
+  display: flex;
+  width: 20vw;
+  gap: 5vw;
+  padding-left: 7vw;
+}
+.address {
+  background: url("../images/address.PNG");
+  width: 400px;
+  height: 100px;
+  border: 2px solid #e1e6e1;
+  border-radius: 150px;
+  overflow: hidden;
+}
+.footer-right {
+  padding-top: 5vh;
+  padding-left: 6vw;
+}
+.footer-left p {
+  text-align: center;
+}
+.fl-img {
+  padding-left: 6vw;
+}
+.footer-mid-items {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vh;
+}
+.footer-mid-items p {
+  text-align: center;
+}
+.conct-us {
+  padding-top: 2vh;
+}
+
+.office h2 {
+  padding-bottom: 2vh;
+}
+.greenbg {
+  z-index: 0;
+}
+
+/* shashi ko dena hai */
+.popup {
+  position: fixed;
+  right: 45vw;
+  top: 67vh;
+  background-color: rgb(189, 189, 189);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(1, 2, 3, 0.3), 0 0 20px rgba(1, 2, 3, 0.3), 0;
+
+  z-index: 999;
+  background-color: rgb(221, 221, 221);
+  display: grid;
+  place-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+  width: 40vw;
+  background-color: #e9e7e7;
+  padding: 3rem;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 200ms ease-in-out opacity, 200ms ease-in-out transform;
+  position: relative;
+}
+.popup h1 {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.popup h1:active {
+  transform: scale(0.9);
+}
+.showPopup {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+  position: fixed;
+}
+/* shashi ko dena hai */

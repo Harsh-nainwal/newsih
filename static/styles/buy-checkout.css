@@ -1,0 +1,126 @@
+.buy-checkout-left{
+    background-color: #D9D9D9;
+    height: 92.5vh;
+    font-size: 3vh;
+    padding: 3vh;
+    width: 30vw;
+}
+
+.left-upper {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.personal{
+    margin-top: 4vh;
+}
+
+.inputs{
+    background-color: white;
+    margin-bottom: 2vh;
+    padding: 1vh;
+}
+
+.contact{
+    margin-top: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout{
+    display: flex;
+    gap: 2vw;
+}
+
+.buy-checkout-right{
+    background-color: #D9D9D9;
+    padding: 3vh;
+    width: 40vw;
+}
+
+.my-orders{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    margin-bottom: 3vh;
+    font-size: 3vh;
+}
+
+.deliver {
+    display: flex;
+    gap: 4vw;
+    background-color: white;
+    font-size: 2.5vh;
+    justify-content: space-between;
+    margin-left: -3vh;
+    margin-right: -3vh;
+    padding: 2vh;
+}
+
+.red{
+    color: #FF0000;
+}
+
+.offers{
+    font-weight: bold;
+    background-color: white;
+}
+
+.cart{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    gap: 1vw;
+}
+
+.img-box{
+    background-color: #D9D9D9;
+    height: 10vh;
+    width: 6vw;
+    margin: 1vh;
+}
+
+.order-button{
+    display: flex;
+    justify-content: center;
+    background-color: #FF5D29;
+    color: white;
+}
+
+.offers {
+    margin-top: 3vh;
+    font-size: 2.5vh;
+    height: 10vh;
+    padding: 1vh;
+    margin-bottom: 3vh;
+}
+
+.in-cart{
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+.cart{
+    font-size: 2.25vh;
+    margin-top: 2vh;
+}
+
+.order-button{
+    margin-top: 2vh;
+    height: 4.5vh;
+    font-size: 3vh;
+    padding-top: 1.5vh;
+    width: 10vw;
+    margin-left: 15vw;
+}
+
+.delete{
+    background: url("../images/icons8-bin-24.png");
+    width: 3vh;
+    height: 3vh;
+    align-self: flex-end;
+    margin-left: 22vw;
+}
+

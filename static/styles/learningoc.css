@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&family=Pangolin&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+body {
+  min-height: 300vh;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  padding-left: 1vw;
+  padding-top: 1vh;
+  background-blend-mode: multiply;
+}
+
+.navbar {
+  display: flex;
+  /* overflow: hidden; */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(196, 196, 196, 0.589);
+  height: 10vh;
+  font-family: "IBM Plex Serif", serif;
+  z-index: 100;
+  width: 100vw;
+}
+
+.items ul {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+  padding-top: 4vh;
+  font-size: large;
+  font-weight: 450;
+  padding-left: 26vw;
+}
+
+.items a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.items a:hover {
+  color: rgb(58, 238, 82);
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+/* .intro{
+    background-image: url(India.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1350px;
+    height: 703px;
+    color: antiquewhite;
+    font-family: 'Pangolin' sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+} */
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: rgb(58, 238, 82);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(175, 176, 168);
+  min-width: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(151, 148, 145);
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.join-btn {
+  background-color: orangered;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border: 0.15rem solid orangered;
+  border-radius: 43px;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  color: #ffffff;
+}
+.join-btn a:hover {
+  color: rgb(0, 0, 0);
+}
+.join-btn:hover {
+  background-color: rgba(255, 68, 0, 0.671);
+}
+.img-container {
+  height: 95vh;
+}
+
+.footer {
+  background-color: #e1e6e1;
+  height: 40vh;
+  width: 100vw;
+}
+.fu {
+  height: 85%;
+  display: flex;
+  width: 100vw;
+}
+.fd {
+  height: 15%;
+  background-color: #b2b0b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  padding-left: 5vw;
+}
+.footer-mid {
+  padding-top: 5vh;
+  display: flex;
+  width: 20vw;
+  gap: 5vw;
+  padding-left: 7vw;
+}
+.address {
+  background: url("../images/address.PNG");
+  width: 400px;
+  height: 100px;
+  border: 2px solid #e1e6e1;
+  border-radius: 150px;
+  overflow: hidden;
+}
+.footer-right {
+  padding-top: 5vh;
+  padding-left: 6vw;
+}
+.footer-left p {
+  text-align: center;
+}
+.fl-img {
+  padding-left: 6vw;
+}
+.footer-mid-items {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vh;
+}
+.footer-mid-items p {
+  text-align: center;
+}
+.conct-us {
+  padding-top: 2vh;
+}
+
+.office h2 {
+  padding-bottom: 2vh;
+}
+
+.about-us-1 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.au-left {
+  width: 800px;
+  padding-right: 1vw;
+}
+.aur-down {
+  margin-top: 40vh;
+  padding-top: 5px;
+  padding-left: 15px;
+  width: 40vw;
+  background-color: #9acd4c;
+  height: 49vh;
+}
+.aur-down p {
+  padding-top: 3vh;
+  font-size: 20px;
+}
+.aul-up {
+  margin-top: 15vh;
+}
+.loc-2-up {
+  display: flex;
+  padding-left: 6vw;
+}
+.loc-up-right {
+  padding-left: 7vw;
+}
+.loc-up-left {
+  margin-top: 3vh;
+  padding: 2vh;
+  height: 33vh;
+  background-color: #9acd4c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.loc-up-left p {
+  font-size: 20px;
+}
+
+.loc-2-down {
+  display: flex;
+  width: 100vw;
+  gap: 3vw;
+  justify-content: center;
+}
+.loc-4 {
+  padding-top: 6vh;
+  padding-left: 4vw;
+  padding-bottom: 6vh;
+}
+.img-conatiner1 {
+  margin-top: 2.5vh;
+}
+
+.loc-3 {
+  display: flex;
+  padding-top: 6vh;
+  gap: 2.5vw;
+}
+
+.loc-3-left-up {
+  padding-top: 0.5vh;
+  padding-left: 6vw;
+}
+.loc-3-left-down {
+  padding-top: 11vh;
+  padding-left: 4.9vw;
+}
+.loc-3-right-down {
+  padding-top: 4vh;
+}
+.loc-5 {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin-bottom: 5vh;
+}
+.blog {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  background-size: cover;
+  opacity: 0.8;
+  position: relative;
+  z-index: 0;
+}
+
+.blog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.loc-5 h2 {
+  position: relative;
+  z-index: 1;
+  padding: 13vh 20px 20px;
+  color: #fff;
+}
+
+.blog1 {
+  background: url(../images/loc-5-1.jpeg);
+  text-align: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+.blog2 {
+  background: url(../images/loc-5-2.jpeg);
+  text-align: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+.blog3 {
+  background: url(../images/loc-5-3.jpeg);
+  text-align: center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+/* shashi ko dena hai */
+.popup {
+  position: fixed;
+  left: 3vw;
+  top: 72vh;
+  background-color: rgb(189, 189, 189);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(1, 2, 3, 0.3), 0 0 20px rgba(1, 2, 3, 0.3), 0;
+
+  z-index: 999;
+  background-color: rgb(221, 221, 221);
+  display: grid;
+  place-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+  width: 40vw;
+  background-color: rgb(223, 144, 144);
+  padding: 3rem;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 200ms ease-in-out opacity, 200ms ease-in-out transform;
+  position: relative;
+}
+.popup h1 {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.popup h1:active {
+  transform: scale(0.9);
+}
+.showPopup {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+  position: fixed;
+}
+/* shashi ko dena hai */

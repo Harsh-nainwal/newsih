@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="../static/styles/contactUs.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+          <div class="logo">
+            <a href="{{ url_for('index_page') }}" class="imglink"
+              ><img
+                src="../static/images/logo.jpg"
+                alt="EcoTech Reclaim"
+                height="65px"
+                width="auto"
+            /></a>
+          </div>
+          <div class="items">
+            <ul>
+              <!-- ADDED HOME -->
+              <li><a href="{{ url_for('index_page') }}">Home</a></li>
+              <!-- HOME ENDED -->
+              <li><a href="{{ url_for('aboutus_page') }}">About Us</a></li>
+              <div class="dropdown">
+                <button class="link dropbtn">Services</button>
+                <div class="dropdown-content">
+                  <a href="{{ url_for('buy_page') }}">Buy</a>
+                  <a href="{{ url_for('sell_page') }}">Sell</a>
+                  <a href="#facility_locator">Facility Locator</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="{{ url_for('learningoc_page') }}"><button class="link dropbtn">
+                  Learning Outcome</a>
+                </button>
+                <div class="dropdown-content">
+                  <a href="{{ url_for('learningoc_page') }}">Education</a>
+                  <a href="{{ url_for('learningoc_page') }}">Classification of E-Waste</a>
+                  <a href="{{ url_for('learningoc_page') }}">Statistics</a>
+                  <a href="{{ url_for('learningoc_page') }}">Blogs</a>
+                </div>
+              </div>
+              <li><a href="{{ url_for('contactus_page') }}">Contact Us</a></li>
+              <div class="btn">
+                <button class="join-btn">
+                  <li><a href="{{ url_for('login_page') }}">Join Our Community</a></li>
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="about-us-1">
+        <div class="au-left">
+            <div class="aul-up">    
+                <div class="img-au1">
+                    <img src="../static/images/cu1.jpeg" alt="" width="700px" height="450px">
+                </div>
+                <div class="blank-au1">
+
+                </div>
+            </div>
+            <div class="aul-down"></div>
+        </div>
+        <div class="au-right">
+            <div class="aur-up"></div>
+            <div class="aur-down">
+                <h1><b><u>CONTACT US</u></b></h1>
+                <p>"Have questions or ready to contribute to our eco-friendly mission? Reach out to us! Our dedicated team is here to assist you with any inquiries, collaborations, or eco waste donations.</p>
+                <p>Together, we can make a positive impact on the environment. Contact us today to join the movement towards a greener, more sustainable future."</p>
+            </div>
+        </div>
+    </div>  
+    <div class="conct-us-2">
+        <div class="cs2-left">
+            <img src="../static/images/cs2.PNG" alt="">
+        </div>
+        <div class="cs2-right">
+            <div class="form">
+                <div class="fl1">
+                    <input class="form__input form__input1" type="text" placeholder="First Name">
+                    <input class="form__input form__input1" type="text" placeholder="Last Name">
+                </div>
+                <div class="fl2">
+                    <input class="form__input form__input2" type="email" placeholder="E-mail address">
+                </div>
+                <div class="fl3">   
+                    <input class="form__input form__input3" type="text" placeholder="Phone number">
+                </div>
+                <div class="fl4">
+                    <input class="form__input form__input4" type="text" placeholder="Leave a message">
+                </div>
+                <button type="button" class="au2-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="conct-us-3">
+        <div class="cs3-left">
+            <img src="../static/images/faq.png" alt="">
+        </div>
+        <div class="cs3-right">
+            <div class="faq">
+                <div class="question">
+                    <h3>What is Refurbished Eco Waste?</h3>
+                    <svg width="20" height="15" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Refurbished eco waste refers to discarded items or materials that have been collected from the public and processed to restore their functionality and value while minimizing environmental impact.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>Why Should I Buy Refurbished Eco Waste?</h3>
+                    <svg width="20" height="15" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Buying refurbished eco waste helps reduce waste in landfills, conserves resources, and often offers cost-effective and sustainable alternatives to new products.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>Do You Provide Warranty on Refurbished Products? </h3>
+                    <svg width="20" height="15" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Yes, we offer warranties or guarantees on many of our refurbished products. Specific warranty information can be found on each product's listing.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>Are Refurbished Eco Waste Safe And Reliable?</h3>
+                    <svg width="20" height="15" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Yes, we thoroughly inspect and test all refurbished items to ensure they meet safety and quality standards. We stand behind the reliability of our products.
+                    </p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    <h3>How Can I Get Involved In Your Eco Eco-Friendly Initiatives and Events </h3>
+                    <svg width="20" height="15" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                    <p>
+                        Stay updated on our website and social media for information on volunteer opportunities, community events, and partnerships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="{{ url_for('static', filename ='scripts/contactus.js') }}"></script>
+</body>
+<footer>
+    <div class="footer">
+        <div class="fu">
+            <div class="footer-left">
+                <div class="fl-img"><img src="../static/images/logogrey.jpeg" alt="" width="150px"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae sit labore eaque? Vitae cumque laudantium doloribus itaque assumenda, possimus excepturi accusamus. Expedita illo quaerat dolorem neque laborum aut quod adipisci?</p>
+            </div>
+            <div class="footer-mid">
+                <div class="services si">
+                    <div class="footer-mid-heading">
+                        <h3>Services</h3>
+                    </div>
+                    <div class="footer-mid-items">
+                        <p><a href="{{ url_for('sell_page') }}"></a>Sell</p>
+                        <p><a href="{{ url_for('buy_page') }}"></a>Buy</p>
+                        <p><a href=""></a>Locator</p>
+                    </div>
+                </div>
+                <div class="info si">
+                    <div class="footer-mid-heading">
+                        <h3>Information</h3>
+                    </div>
+                    <div class="footer-mid-items">
+                        <p><a href="{{ url_for('aboutus_page') }}"></a>What we are</p>
+                        <p><a href="{{ url_for('learningoc_page') }}"></a>What we do</p>
+                        <p><a href=""></a>Features</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="office">
+                    <h2>OFFICE-ADDRESS:-</h2>
+                    <div class="address"><a href="office.html"></a></div>
+                </div>
+                <div class="conct-us">
+                    <h2>CONTACT US</h2>
+                </div>
+            </div>
+        </div>
+        <div class="fd">
+            Copyright © 2023 EcoTech ReClaim eWaste Management LTD. ALL RIGHTS ARE RESERVED
+        </div>
+    </div>
+</footer>
+</html>

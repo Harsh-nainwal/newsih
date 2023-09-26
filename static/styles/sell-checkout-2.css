@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.buying-items {
+  margin-top: 7vh;
+  padding: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2vw;
+}
+
+.description {
+  background: #81da1d;
+  padding: 1vh;
+  margin: 1vw;
+  font-size: 1.7vh;
+}
+
+.buy-item-description {
+  margin-top: 1vh;
+  background-color: #d9d9d9;
+  padding: 1vw;
+}
+
+.buy-item-upper {
+  background-color: #d9d9d9;
+  padding: 0 1vh;
+}
+.button-price,
+.name-plus {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-to-cart {
+  border-radius: 0.5vh;
+  border: 0;
+  background-color: #ff5d29;
+  color: white;
+  padding: 1vh;
+}
+
+.heart {
+  width: 5vw;
+  height: 4.5vh;
+  background-image: url("../images/heart-svgrepo-com.svg");
+  background-position: 50% 50%;
+  background-size: 4vh;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+.buy-item-upper-upper {
+  display: flex;
+  margin-left: 0.5vw;
+}
+
+.plus {
+  padding: 0;
+  font-size: 2.5vh;
+}
+
+.buy-item-image {
+  /* background: url("../images/buy-item1.png"); */
+  width: 15vw;
+  height: 20vh;
+  background-size: 28vh;
+}

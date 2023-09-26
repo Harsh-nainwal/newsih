@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoTech Reclaim</title>
+    <link rel="stylesheet" href="../static/styles/home.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="logo">
+          <a href="{{ url_for('index_page') }}" class="imglink"
+            ><img
+              src="../static/images/logo.jpg"
+              alt="EcoTech Reclaim"
+              height="65px"
+              width="auto"
+          /></a>
+        </div>
+        <div class="items">
+          <ul>
+            <!-- ADDED HOME -->
+            <li><a href="{{ url_for('index_page') }}">Home</a></li>
+            <!-- HOME ENDED -->
+            <li><a href="{{ url_for('aboutus_page') }}">About Us</a></li>
+            <div class="dropdown">
+              <button class="link dropbtn">Services</button>
+              <div class="dropdown-content">
+                <a href="{{ url_for('buy_page') }}">Buy</a>
+                <a href="{{ url_for('sell_page') }}">Sell</a>
+                <a href="#facility_locator">Facility Locator</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="{{ url_for('learningoc_page') }}"><button class="link dropbtn">
+                Learning Outcome</a>
+              </button>
+              <div class="dropdown-content">
+                <a href="{{ url_for('learningoc_page') }}">Education</a>
+                <a href="{{ url_for('learningoc_page') }}">Classification of E-Waste</a>
+                <a href="{{ url_for('learningoc_page') }}">Statistics</a>
+                <a href="{{ url_for('learningoc_page') }}">Blogs</a>
+              </div>
+            </div>
+            <li><a href="{{ url_for('contactus_page') }}">Contact Us</a></li>
+            <div class="btn">
+              <button class="join-btn">
+                <li><a href="{{ url_for('login_page') }}">Join Our Community</a></li>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="img-container">
+      <div class="slider">
+        <div class="slides">
+          <!-- Radio button starts -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!-- Radio button ends -->
+
+          <!-- Slide images start -->
+          <div class="slide first">
+            <img src="../static/images/b1.png" alt="Banner1" />
+          </div>
+          <div class="slide">
+            <img src="../static/images/b2.png" alt="Banner2" />
+          </div>
+          <div class="slide">
+            <img src="../static/images/b3.png" alt="Banner3" />
+          </div>
+          <div class="slide">
+            <img src="../static/images/b4.png" alt="Banner4" />
+          </div>
+          <!-- Slide images end -->
+
+          <!-- Automatic navigation start -->
+          <div class="navigation-auto">
+            `
+            <div class="autobtn1"></div>
+            <div class="autobtn2"></div>
+            <div class="autobtn3"></div>
+            <div class="autobtn4"></div>
+          </div>
+          <!-- Automatic navigation end -->
+        </div>
+        <!-- Manual navigation start -->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- Manual navigation end -->
+      </div>
+    </div>
+
+    <div class="infoAbout" id="about-uss">
+      <div class="leftInfo">
+        <div class="heading">
+          <h2>WHO ARE WE?</h2>
+        </div>
+        <div class="underline">
+          <img src="../static/images/underline.jpg" alt="" />
+        </div>
+        <div class="para">
+          <div class="p1">
+            Eco-Tech Reclaim aims to build a sustainable and prosperous future
+            for all by transforming e-waste into valuable assests.
+          </div>
+          <div class="p2">
+            Eco-Tech Reclaim provides doorstep pickup facility, collects e-waste
+            , categorize ,sort , refurbish , repurpose electronic components and
+            by selling add value to it and providing new life and each piece
+            embarks on a new journey.
+          </div>
+          <div class="p3">
+            Eco-Tech Reclaim isn't just a website; it's a bridge of
+            possibilities, a beacon of hope for both sellers and the planet, and
+            we hope to reduce as much e-waste as possible and decrease the
+            percentage of e-waste with time.Our platform goes beyond e-waste
+            collection; it's an educational journey. When you engage with us,
+            you'll not only recycle but also gain valuable insights.
+          </div>
+        </div>
+      </div>
+      <div class="rightInfo">
+        <img src="../static/images/Frame 4.png" alt="" width="900px" height="600px"></div>
+    </div>
+    <div class="knowMore">
+      <button class="knowMore-btn"><a href="{{ url_for('aboutus_page') }}">Know More</a></button>
+    </div>
+    <div class="getProducts">
+      <div class="heading getPH">
+        <h2>PRODUCTS WE RECYCLE</h2>
+      </div>
+      <div class="underline">
+        <img
+          src="../static/images/underline.jpg"
+          alt=""
+          width="310px"
+          height="50px"
+        />
+      </div>
+    </div>
+    <div class="productContainer">
+      <div class="boxes">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+        <div class="box box10"></div>
+        <div class="box box11"></div>
+        <div class="box box12"></div>
+        <div class="box box13"></div>
+        <div class="box box14"></div>
+        <div class="box box15"></div>
+        <div class="box box16"></div>
+      </div>
+    </div>
+    <div class="knowMore2" id="facility_locator">
+      <button class="knowMore-btn"><a href="#">& Many More</a></button>
+    </div>
+    <div class="fl">
+      <div class="fl-img-left">
+        <img src="../static/images/footerImg.png" alt="" height="200px" />
+      </div>
+      <div class="fl-right">
+        <div class="input">
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Enter your state"
+          />
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Enter your city"
+          />
+          <button class="knowMore-btn fl-btn"><a href="#">Know More</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="buySell" id="buysell">
+      <div class="sell" id="buysell_sell">
+        <div class="sell-left">
+          <div class="headingbs leftSell">
+            <h2>SELL</h2>
+          </div>
+          <div class="underline">
+            <img
+              src="../static/images/underline.jpg"
+              alt=""
+              width="70px"
+              height="30px"
+            />
+          </div>
+          <div class="parabs p1 highlight">
+            <p>
+              Explore a treasure trove of eco-friendly electronic components at Eco-Tech Reclaim! We offer high-quality, recycled parts for your repair and DIY needs. By shopping with us, you support a sustainable future while finding top-notch replacement components. Join our mission to reduce e-waste. Shop Eco-Tech Reclaim today!
+            </p>
+          </div>
+          <button class="knowMore-btn sell-btn">
+            <a href="{{ url_for('sell_page') }}">Know More</a>
+          </button>
+        </div>
+        <div class="sell-right imageBS">
+          <img src="../static/images/trash.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="buy" id="buysell_buy">
+        <div class="buy-left imageBS">
+          <img src="../static/images/buy.jpg" alt="" />
+        </div>
+        <div class="buy-right">
+          <div class="headingbs rightSell">
+            <h2>BUY</h2>
+          </div>
+          <div class="underline">
+            <img
+              src="../static/images/underline.jpg"
+              alt=""
+              width="70px"
+              height="30px"
+            />
+          </div>
+          <div class="parabs p1 highlight">
+            <p>
+              Turn your old electronics into cash at Eco Tech Reclaim! Send us your unwanted gadgets, and we'll extract valuable components for reuse. From laptops to smartphones, we accept various devices. Our eco-friendly approach declutters your life while reducing electronic waste. Earn extra money while supporting the environment. Trust our team for fair compensation. Join the e-waste recycling revolution today!
+            </p>
+          </div>
+          <button class="knowMore-btn buy-btn">
+            <a href="{{ url_for('buy_page') }} ">Know More</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="last">
+      <div class="headingLast">
+        <h1>E-WASTE GENERATING IN INDIA</h1>
+      </div>
+      <div class="box-container">
+        <div class="boxes last-box">
+          <div class="box box-1></div>
+          <div class="box box2"></div>
+          <div class="box box3"></div>
+          <div class="box box4"></div>
+          <div class="box box5"></div>
+          <div class="box box6"></div>
+          <div class="box box7"></div>
+        </div>
+      </div>
+      <div class="text-wrapper">
+        <h2>Discover, Learn, and Contribute with ECO-TECH RECLAIM</h2>
+        <h2>Discover, Learn, and Contribute with ECO-TECH RECLAIM</h2>
+        <h2>Discover, Learn, and Contribute with ECO-TECH RECLAIM</h2>
+        <h2>Discover, Learn, and Contribute with ECO-TECH RECLAIM</h2>
+      </div>
+    </div>
+    <div class="popup">
+      <div class="popup-content">
+        <h1>X</h1>
+        <h2>
+          Did u know several elements and substances found in e-waste can be
+          associated with an increased risk of cancer?
+        </h2>
+        <br />
+        <p>
+          Chronic exposure to elements such as Lead(pb),Cadmium (Cd),Mercury
+          (Hg) used in CRT monitors and older TV screens, batteries, lamps,
+          switches, circuit boards, cables, etc causes various kind of
+          cancer.
+        </p>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename ='scripts/home.js') }}"></script>
+  </body>
+  <footer>
+    <div class="footer">
+      <div class="fu">
+        <div class="footer-left">
+          <div class="fl-img">
+            <img src="../static/images/logogrey.jpeg" alt="" width="150px" />
+          </div>
+          <p>
+            ECO TECH RECLAIM is an e-waste collection and conversion initiative
+            which aims to build a sustainable and prosperous future for all
+          </p>
+        </div>
+        <div class="footer-mid">
+          <div class="services si">
+            <div class="footer-mid-heading">
+              <h3>Services</h3>
+            </div>
+            <div class="footer-mid-items">
+              <p><a href="buy.html"></a>Sell</p>
+              <p><a href="sell.html"></a>Buy</p>
+              <p><a href="locator.html"></a>Locator</p>
+            </div>
+          </div>
+          <div class="info si">
+            <div class="footer-mid-heading">
+              <h3>Information</h3>
+            </div>
+            <div class="footer-mid-items">
+              <p><a href="about.html"></a>What we are</p>
+              <p><a href="learningoc.html"></a>What we do</p>
+              <p><a href="features.html"></a>Features</p>
+              <p><a href="blogs.html"></a>Blogs</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="office">
+            <h2>OFFICE-ADDRESS:-</h2>
+            <div class="address"><a href="office.html"></a></div>
+          </div>
+          <div class="conct-us">
+            <h2>CONTACT US</h2>
+          </div>
+        </div>
+      </div>
+      <div class="fd">
+        Copyright © 2023 EcoTech ReClaim eWaste Management LTD. ALL RIGHTS ARE
+        RESERVED
+      </div>
+    </div>
+  </footer>
+</html>

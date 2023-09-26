@@ -1,0 +1,27 @@
+.b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b1-cont{
+    height: 350px;
+    width: 400px;
+    background: grey url(../images/loc-5-1.jpeg);
+    background-size: cover; 
+}
+.b2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b3{
+    background-color: #D9D9D9;
+    font-size: 20px;
+}
+.b3 p{
+    padding: 10px;
+}
+.b4{
+    display: flex;
+    font-size: 20px;
+}
